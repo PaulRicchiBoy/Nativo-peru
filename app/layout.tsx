@@ -8,25 +8,25 @@ import { Navbar } from '@/components/navbar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Amaiatours - Tours Auténticos en Perú',
-  description: 'Descubre la magia de Perú con Amaiatours. Tours a Machu Picchu, Montaña de 7 Colores, Laguna Humantay y más. Experiencias auténticas con guías expertos.',
-  keywords: 'tours peru, machu picchu, cusco, rainbow mountain, tours cusco, amaiatours',
+  title: 'Nativo Expeditions - Expediciones Auténticas y de Conciencia en Perú',
+  description: 'Conecta con la esencia de Perú a través de expediciones conscientes y auténticas. Trekking cultural, ecoturismo, experiencias ancestrales y viajes sostenibles con comunidades locales.',
+  keywords: 'expediciones peru, turismo sostenible, ecoturismo, trekking cultural, comunidades nativas, viajes conscientes, peru auténtico, nativo expeditions',
   openGraph: {
-    title: 'Amaiatours - Tours Auténticos en Perú',
-    description: 'Descubre la magia de Perú con tours auténticos y experiencias únicas',
+    title: 'Nativo Expeditions - Expediciones Auténticas y de Conciencia',
+    description: 'Experiencias profundas que conectan viajeros con la cultura, naturaleza y comunidades del Perú',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80&w=1200',
+        url: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Amaiatours - Tours Auténticos en Perú',
-    description: 'Descubre la magia de Perú con tours auténticos y experiencias únicas',
+    title: 'Nativo Expeditions - Expediciones Auténticas y de Conciencia',
+    description: 'Experiencias profundas que conectan viajeros con la cultura, naturaleza y comunidades del Perú',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1587595431973-160d0d94add1?q=80&w=1200',
+        url: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1200',
       },
     ],
   },

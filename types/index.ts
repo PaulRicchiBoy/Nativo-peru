@@ -1,4 +1,5 @@
-export interface Tour {
+// types.ts
+export type Tour = {
   id: string;
   title: string;
   titleEn: string;
@@ -10,9 +11,23 @@ export interface Tour {
   descriptionEn: string;
   highlights: string[];
   highlightsEn: string[];
-}
+  hotelCategory?: string; // Opcional
+  passengerType?: string; // Opcional
+  itinerary?: Array<{
+    day: number;
+    title: string;
+    titleEn: string;
+    description: string;
+    descriptionEn: string;
+    schedule?: string;
+    includes: string[];
+    includesEn: string[];
+  }>;
+  inclusions?: string[];
+  inclusionsEn?: string[];
+};
 
-export interface Testimonial {
+export type Testimonial = {
   id: string;
   name: string;
   country: string;
@@ -20,8 +35,7 @@ export interface Testimonial {
   text: string;
   textEn: string;
   image: string;
-}
-
+};
 export interface ContactForm {
   name: string;
   email: string;

@@ -33,8 +33,12 @@ export const translations = {
       subtitle: "Vive experiencias auténticas con guías expertos locales. Tours personalizados a Machu Picchu, Montaña de 7 Colores, Laguna Humantay y más.",
       ctaButton: "Explorar Tours",
       stat1: "500+ Clientes",
-      stat2: "50+ Tours",
-      stat3: "Guías Expertos"
+      stat2: "50+ Tours", 
+      stat3: "Guías Expertos",
+      stat1Desc: "Viajeros satisfechos",
+      stat2Desc: "Experiencias únicas",
+      stat3Desc: "Guías certificados",
+      badgeText: "Viajes Auténticos & Sostenibles"
     },
     tours: {
       title: "Nuestros Tours Destacados",
@@ -64,7 +68,43 @@ export const translations = {
       yearsExp: "Años de Experiencia",
       toursCompleted: "Tours Realizados",
       happyClients: "Clientes Satisfechos",
-      successRate: "Tasa de Satisfacción"
+      successRate: "Tasa de Satisfacción",
+      // Nuevas traducciones para el componente About
+      philosophyBadge: "Filosofía de Viaje",
+      mainTitle: "Más que Expediciones, Conexiones Humanas",
+      mainSubtitle: "En Amaiatours, no solo te llevamos a lugares extraordinarios; te invitamos a conectar con las raíces, historias y personas que hacen del Perú un destino verdaderamente transformador.",
+      coreValuesTitle: "Nuestros Valores Fundamentales",
+      coreValuesHighlight: "Valores Fundamentales",
+      philosophyTitle: "Nuestra Filosofía en Acción",
+      philosophyHighlight: "Filosofía",
+      impactTitle: "Impacto que Cultivamos",
+      impactSubtitle: "Números que representan nuestro compromiso con experiencias auténticas y sostenibles",
+      // Core values
+      value1Title: "Conexión Auténtica",
+      value1Desc: "Trabajamos directamente con comunidades locales, asegurando que nuestros tours respeten y honren las tradiciones ancestrales y el territorio.",
+      value1Highlight: "Comunidades Locales",
+      value2Title: "Turismo Consciente",
+      value2Desc: "Cada tour está diseñado con propósito, priorizando el bienestar de las comunidades y la conservación de los ecosistemas que visitamos.",
+      value2Highlight: "Impacto Positivo",
+      value3Title: "Sostenibilidad Integral",
+      value3Desc: "Compromiso total con prácticas ecológicas, reducción de huella de carbono y apoyo a proyectos de conservación en cada destino.",
+      value3Highlight: "Huella Ecológica",
+      value4Title: "Experiencias Transformadoras",
+      value4Desc: "Más que viajes, ofrecemos encuentros humanos que expanden perspectivas y crean recuerdos que duran toda la vida.",
+      value4Highlight: "Transformación Personal",
+      // Philosophy points
+      philosophyPoint1: "Creemos en viajar de manera lenta y profunda, permitiendo conexiones reales con las personas y lugares",
+      philosophyPoint2: "Cada experiencia co-creada con comunidades para asegurar intercambios culturales auténticos y justos",
+      philosophyPoint3: "Nos comprometemos a dejar cada lugar mejor de lo que lo encontramos, tanto ambiental como socialmente",
+      // Stats
+      statCommunities: "Comunidades Aliadas",
+      statCommunitiesDesc: "Trabajo colaborativo",
+      statTravelers: "Viajeros Transformados",
+      statTravelersDesc: "Experiencias que cambian vidas",
+      statSatisfaction: "Satisfacción",
+      statSatisfactionDesc: "Calificación promedio",
+      statSustainability: "Compromiso Sostenible",
+      statSustainabilityDesc: "Prácticas ecológicas"
     },
     testimonials: {
       title: "Lo Que Dicen Nuestros Clientes",
@@ -130,7 +170,11 @@ export const translations = {
       ctaButton: "Explore Tours",
       stat1: "500+ Clients",
       stat2: "50+ Tours",
-      stat3: "Expert Guides"
+      stat3: "Expert Guides",
+      stat1Desc: "Happy travelers",
+      stat2Desc: "Unique experiences",
+      stat3Desc: "Certified guides",
+      badgeText: "Authentic & Sustainable Travel"
     },
     tours: {
       title: "Our Featured Tours",
@@ -160,7 +204,43 @@ export const translations = {
       yearsExp: "Years of Experience",
       toursCompleted: "Tours Completed",
       happyClients: "Happy Clients",
-      successRate: "Satisfaction Rate"
+      successRate: "Satisfaction Rate",
+      // New translations for About component
+      philosophyBadge: "Travel Philosophy",
+      mainTitle: "More Than Expeditions, Human Connections",
+      mainSubtitle: "At Amaiatours, we don't just take you to extraordinary places; we invite you to connect with the roots, stories, and people that make Peru a truly transformative destination.",
+      coreValuesTitle: "Our Core Values",
+      coreValuesHighlight: "Core Values",
+      philosophyTitle: "Our Philosophy in Action",
+      philosophyHighlight: "Philosophy",
+      impactTitle: "Impact We Cultivate",
+      impactSubtitle: "Numbers that represent our commitment to authentic and sustainable experiences",
+      // Core values
+      value1Title: "Authentic Connection",
+      value1Desc: "We work directly with local communities, ensuring that our tours respect and honor ancestral traditions and territory.",
+      value1Highlight: "Local Communities",
+      value2Title: "Conscious Tourism",
+      value2Desc: "Every tour is designed with purpose, prioritizing community well-being and conservation of the ecosystems we visit.",
+      value2Highlight: "Positive Impact",
+      value3Title: "Comprehensive Sustainability",
+      value3Desc: "Total commitment to ecological practices, carbon footprint reduction, and support for conservation projects at every destination.",
+      value3Highlight: "Ecological Footprint",
+      value4Title: "Transformative Experiences",
+      value4Desc: "More than trips, we offer human encounters that expand perspectives and create memories that last a lifetime.",
+      value4Highlight: "Personal Transformation",
+      // Philosophy points
+      philosophyPoint1: "We believe in traveling slowly and deeply, allowing real connections with people and places",
+      philosophyPoint2: "Every experience co-created with communities to ensure authentic and fair cultural exchanges",
+      philosophyPoint3: "We commit to leaving every place better than we found it, both environmentally and socially",
+      // Stats
+      statCommunities: "Partner Communities",
+      statCommunitiesDesc: "Collaborative work",
+      statTravelers: "Transformed Travelers",
+      statTravelersDesc: "Life-changing experiences",
+      statSatisfaction: "Satisfaction",
+      statSatisfactionDesc: "Average rating",
+      statSustainability: "Sustainable Commitment",
+      statSustainabilityDesc: "Ecological practices"
     },
     testimonials: {
       title: "What Our Clients Say",
