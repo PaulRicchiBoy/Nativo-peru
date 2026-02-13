@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from '@/contexts/LanguageContext';
-import { blogPosts } from '@/lib/blogs';
+import { blogPosts, BlogPost } from '@/lib/blogs';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -10,15 +10,15 @@ import {
   MessageCircle, Tag, Share2, Bookmark, Twitter, 
   Facebook, Linkedin, ChevronRight, Star
 } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function BlogPostPage({ params }: { params: { slug: string } }) {
   const { language } = useLanguage();
   const [isLiked, setIsLiked] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
   
-  // Buscar el post por slug
-  const post = blogPosts.find(p => p.slug === params.slug);
+  // Buscar el post por slug - tipado correcto
+  const post: BlogPost | undefined = blogPosts.find(p => p.slug === params.slug);
 
   // Si no existe el post, mostrar 404
   if (!post) {
@@ -26,7 +26,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   }
 
   // Posts relacionados (misma categoría, excluyendo el actual)
-  const relatedPosts = blogPosts
+  const relatedPosts: BlogPost[] = blogPosts
     .filter(p => p.categorySlug === post.categorySlug && p.id !== post.id)
     .slice(0, 3);
 
@@ -89,7 +89,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 dark:bg-gray-700 z-50">
         <div 
           className="h-full bg-emerald-600 transition-all duration-300"
-          style={{ width: '0%' }} // Aquí iría la lógica de progreso
+          style={{ width: '0%' }}
         />
       </div>
 
@@ -418,23 +418,25 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 </div>
 
                 {/* Tags */}
-                <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
-                    <Tag className="w-5 h-5 mr-2 text-emerald-600" />
-                    {t.tags}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {post.tags?.[language]?.map((tag, index) => (
-                      <Link
-                        key={index}
-                        href={`/blog?tag=${tag.toLowerCase()}`}
-                        className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm hover:bg-emerald-100 dark:hover:bg-emerald-900/30 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
-                      >
-                        #{tag}
-                      </Link>
-                    ))}
+                {post.tags && (
+                  <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <h3 className="font-semibold text-gray-900 dark:text-white mb-3 flex items-center">
+                      <Tag className="w-5 h-5 mr-2 text-emerald-600" />
+                      {t.tags}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {post.tags[language].map((tag: string, index: number) => (
+                        <Link
+                          key={index}
+                          href={`/blog?tag=${tag.toLowerCase()}`}
+                          className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-sm hover:bg-emerald-100 dark:hover:bg-emerald-900/30 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+                        >
+                          #{tag}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
 
                 {/* Autor */}
                 <div className="mt-8 p-6 bg-gray-50 dark:bg-gray-700/50 rounded-xl">
@@ -533,7 +535,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {relatedPosts.map((related) => (
+              {relatedPosts.map((related: BlogPost) => (
                 <Link
                   key={related.id}
                   href={`/blog/${related.slug}`}
