@@ -343,7 +343,7 @@ export const tours: Tour[] = [
   "id": "cuzco-inolvidable-4d3n",
   "title": "Cusco Inolvidable 4D/3N",
   "titleEn": "Unforgettable Cusco 4D/3N",
-  "image": "",
+  "image": "/uc4d-3n.jpg",
   "duration": 4,
   "difficulty": "moderate",
   "price": 799,
@@ -521,7 +521,7 @@ export const tours: Tour[] = [
   "id": "cusco-inolvidable-6d5n",
   "title": "Cusco Inolvidable 6D/5N",
   "titleEn": "Unforgettable Cusco 6D/5N",
-  "image": "/cuzco-montana-colores.png",
+  "image": "/uc6d-5n.jpg",
   "duration": 6,
   "difficulty": "moderate",
   "price": 1099,
@@ -663,7 +663,7 @@ export const tours: Tour[] = [
   "id": "cusco-inolvidable-7d6n",
   "title": "Cusco Inolvidable 7D/6N",
   "titleEn": "Unforgettable Cusco 7D/6N",
-  "image": "/cuzco-montana-colores.png",
+  "image": "/uc7d-6n.jpg",
   "duration": 7,
   "difficulty": "moderate",
   "price": 1299,
@@ -1821,7 +1821,7 @@ export const tours: Tour[] = [
   "id": "machu-picchu-express-2d1n",
   "title": "Machu Picchu Express 2D/1N",
   "titleEn": "Machu Picchu Express 2D/1N",
-  "image": "/machu-picchu-express.png",
+  "image": "/machu-picchu-express.jpg",
   "duration": 2,
   "difficulty": "moderate",
   "price": 399,
@@ -1895,7 +1895,7 @@ export const tours: Tour[] = [
   "id": "machu-picchu-full-day",
   "title": "Machu Picchu Full Day",
   "titleEn": "Machu Picchu Full Day",
-  "image": "/machu-picchu-full-day.png",
+  "image": "/machu-picchu-full-day.jpg",
   "duration": 1,
   "difficulty": "moderate",
   "price": 299,
@@ -2209,7 +2209,7 @@ export const tours: Tour[] = [
   id: 'machu-picchu-express-1d',
   title: 'Machu Picchu Express',
   titleEn: 'Machu Picchu Express',
-  image: '/machuPicchuExpress1d.png',
+  image: '/machu-picchu-express1d.jpg',
   duration: 1,
   difficulty: 'easy',
   price: 449,
@@ -2275,113 +2275,14 @@ export const tours: Tour[] = [
   ]
 },
 
-// MACHU PICCHU EXPRESS 2D/1N
-{
-  id: 'machu-picchu-express-2d1n',
-  title: 'Machu Picchu Express 2D/1N',
-  titleEn: 'Machu Picchu Express 2D/1N',
-  image: '/machuPicchuExpress2d1n.png',
-  duration: 2,
-  difficulty: 'easy',
-  price: 599,
-  description: 'Descubre Machu Picchu sin prisas. Noche en Aguas Calientes para disfrutar del atardecer y amanecer en la montaña. Visita guiada a la ciudadela con tiempo para explorar y tomar las mejores fotos.',
-  descriptionEn: 'Discover Machu Picchu without rush. Overnight in Aguas Calientes to enjoy sunset and sunrise in the mountain. Guided visit to the citadel with time to explore and take the best photos.',
-  highlights: [
-    'Noche de hotel en Aguas Calientes',
-    'Visita a Machu Picchu en horario extendido',
-    'Tren turístico panorámico',
-    'Atardecer y amanecer en la montaña',
-    'Guía profesional bilingüe',
-    'Experiencia más relajada'
-  ],
-  highlightsEn: [
-    'Hotel night in Aguas Calientes',
-    'Extended visit to Machu Picchu',
-    'Panoramic tourist train',
-    'Sunset and sunrise in the mountain',
-    'Professional bilingual guide',
-    'More relaxed experience'
-  ],
-  hotelCategory: '3★ en Aguas Calientes',
-  passengerType: 'Express',
-  inclusions: [
-    'Transporte Cusco-Ollantaytambo-Cusco',
-    'Ticket de tren turístico (ida y vuelta)',
-    '1 noche de hotel en Aguas Calientes (3★)',
-    'Desayuno en hotel',
-    'Ticket de bus Consettur (subida y bajada)',
-    'Ticket de ingreso a Machu Picchu',
-    'Guía profesional bilingüe',
-    'Asistencia personalizada'
-  ],
-  inclusionsEn: [
-    'Cusco-Ollantaytambo-Cusco transportation',
-    'Roundtrip tourist train ticket',
-    '1 night hotel in Aguas Calientes (3★)',
-    'Breakfast at hotel',
-    'Consettur bus ticket (roundtrip)',
-    'Machu Picchu entrance ticket',
-    'Professional bilingual guide',
-    'Personalized assistance'
-  ],
-  itinerary: [
-    {
-      day: 1,
-      title: 'Cusco - Aguas Calientes - Atardecer en Machu Picchu',
-      titleEn: 'Cusco - Aguas Calientes - Sunset at Machu Picchu',
-      description: 'Salida por la mañana hacia Ollantaytambo. Tren panorámico a Aguas Calientes. Almuerzo libre. Por la tarde, ascenso en bus a Machu Picchu para disfrutar del atardecer en la ciudadela con menos visitantes. Retorno a Aguas Calientes y check-in en hotel.',
-      descriptionEn: 'Morning departure to Ollantaytambo. Panoramic train to Aguas Calientes. Free lunch. Afternoon ascent by bus to Machu Picchu to enjoy sunset at the citadel with fewer visitors. Return to Aguas Calientes and hotel check-in.',
-      schedule: '08:00 - 19:00',
-      includes: [
-        'Transporte Cusco-Ollantaytambo',
-        'Ticket tren turístico',
-        'Buses Consettur (ida)',
-        'Ticket Machu Picchu (turno tarde)',
-        'Guía profesional',
-        'Noche en Aguas Calientes'
-      ],
-      includesEn: [
-        'Cusco-Ollantaytambo transportation',
-        'Tourist train ticket',
-        'Consettur buses (one way)',
-        'Machu Picchu ticket (afternoon shift)',
-        'Professional guide',
-        'Night in Aguas Calientes'
-      ]
-    },
-    {
-      day: 2,
-      title: 'Amanecer en Machu Picchu - Retorno a Cusco',
-      titleEn: 'Sunrise at Machu Picchu - Return to Cusco',
-      description: 'Desayuno en hotel. Ascenso en bus a Machu Picchu para ver el amanecer. Segunda visita guiada complementaria. Tiempo libre para explorar y fotografías. Retorno a Aguas Calientes, almuerzo libre. Tren de regreso a Ollantaytambo y bus a Cusco.',
-      descriptionEn: 'Breakfast at hotel. Ascent by bus to Machu Picchu to see the sunrise. Complementary second guided visit. Free time to explore and take photos. Return to Aguas Calientes, free lunch. Return train to Ollantaytambo and bus to Cusco.',
-      schedule: '06:00 - 21:00',
-      includes: [
-        'Desayuno en hotel',
-        'Buses Consettur (ida)',
-        'Ticket Machu Picchu (turno mañana)',
-        'Guía profesional',
-        'Transporte Ollantaytambo-Cusco',
-        'Ticket tren retorno'
-      ],
-      includesEn: [
-        'Breakfast at hotel',
-        'Consettur buses (one way)',
-        'Machu Picchu ticket (morning shift)',
-        'Professional guide',
-        'Ollantaytambo-Cusco transportation',
-        'Return train ticket'
-      ]
-    }
-  ]
-},
+
 
 // SUNSET & SUNRISE 2D/1N
 {
   id: 'machu-picchu-sunset-sunrise-2d1n',
   title: 'Sunset & Sunrise 2D/1N',
   titleEn: 'Sunset & Sunrise 2D/1N',
-  image: '/machuPicchuSunsetSunrise.png',
+  image: '/sunset-sunrise.jpg',
   duration: 2,
   difficulty: 'easy',
   price: 649,
@@ -2482,7 +2383,7 @@ export const tours: Tour[] = [
   id: 'sacred-valley-machu-picchu-2d1n',
   title: 'Sacred Valley to Machu Picchu 2D/1N',
   titleEn: 'Sacred Valley to Machu Picchu 2D/1N',
-  image: '/sacredValleyMachuPicchu.png',
+  image: '/sacredValleyMachuPicchu.jpg',
   duration: 2,
   difficulty: 'moderate',
   price: 699,

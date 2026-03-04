@@ -2,6 +2,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext';
 import { tours } from '@/lib/data';
+import { getRoute } from '@/lib/routes';  // ← AÑADE ESTA LÍNEA
 import Link from 'next/link';
 import Image from 'next/image';
 import { Train, Clock, DollarSign } from 'lucide-react';
@@ -42,7 +43,7 @@ export default function MachuPicchuTrainPage() {
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {trainTours.map((tour) => (
-              <Link key={tour.id} href={`/tours/${tour.id}`}>
+              <Link key={tour.id} href={getRoute(tour.id)}> {/* ← CAMBIA AQUÍ */}
                 <div className="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:scale-[1.02] border border-gray-200 dark:border-gray-800 h-full flex flex-col">
                   <div className="relative h-48 w-full">
                     <Image
