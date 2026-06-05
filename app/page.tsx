@@ -1,4 +1,5 @@
 import { Hero, Tours, About, Testimonials, Contact, Footer } from "@/components/sections";
+import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Testimonials />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </main>
   );
 }
