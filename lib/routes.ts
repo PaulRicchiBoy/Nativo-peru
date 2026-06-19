@@ -2,10 +2,10 @@
 
 export const routeMap: Record<string, string> = {
   // ===== TOURS DE CUSCO (IDs de data.ts) =====
-  'cuzco-inolvidable-3d2n': '/tour/cuzco-inolvidable-3d2n',  // ← SIN guiones extras
-  'cuzco-inolvidable-4d3n': '/tour/cuzco-inolvidable-4d3n',  // ← SIN guiones extras
-  'cusco-inolvidable-6d5n': '/tour/cusco-inolvidable-6d5n',  // ← SIN guiones extras
-  'cusco-inolvidable-7d6n': '/tour/cusco-inolvidable-7d6n',  // ← SIN guiones extras
+  'cuzco-inolvidable-3d2n': '/tour/cuzco-inolvidable-3d2n',
+  'cuzco-inolvidable-4d3n': '/tour/cuzco-inolvidable-4d3n',
+  'cusco-inolvidable-6d5n': '/tour/cusco-inolvidable-6d5n',
+  'cusco-inolvidable-7d6n': '/tour/cusco-inolvidable-7d6n',
   
   // ===== TOURS LIMA-CUSCO =====
   'experiencia-lima-cusco': '/tour/experiencia-lima-cusco',
@@ -48,6 +48,11 @@ export const routeMap: Record<string, string> = {
   'lima-paracas-ballestas-2d1n': '/tour/lima-paracas-ballestas-2d1n',
   'lima-paracas-huacachina-3d2n': '/tour/lima-paracas-huacachina-3d2n',
   'lima-express': '/tour/lima-express',
+  
+  // ✅ NUEVOS TOURS AGREGADOS
+  'paucartambo-tres-cruces': '/tour/paucartambo-tres-cruces',
+  'bosque-nublado-kosnipata': '/tour/bosque-nublado-kosnipata',
+  'parque-nacional-manu': '/tour/parque-nacional-manu',
 };
 
 // Función helper con validación
@@ -61,10 +66,9 @@ export function getRoute(id: string): string {
   if (process.env.NODE_ENV === 'development') {
     console.error(`❌ ERROR: El tour con ID "${id}" no está registrado en routeMap`);
     console.error('📝 Agrega esta línea a routeMap:');
-    console.error(`  '${id}': '/tours/${id}',`);
+    console.error(`  '${id}': '/tour/${id}',`);
   }
   
-  // Fallback: la URL será /tours/[id]
-  // ESTO ES LO CORRECTO para Next.js App Router
-  return `/tours/${id}`;
+  // Fallback: la URL será /tour/[id]
+  return `/tour/${id}`;
 }

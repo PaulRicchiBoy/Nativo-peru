@@ -11,8 +11,8 @@ export type Tour = {
   descriptionEn: string;
   highlights: string[];
   highlightsEn: string[];
-  hotelCategory?: string; // Opcional
-  passengerType?: string; // Opcional
+  hotelCategory?: string;
+  passengerType?: string;
   itinerary?: Array<{
     day: number;
     title: string;
@@ -21,7 +21,7 @@ export type Tour = {
     descriptionEn: string;
     schedule?: string;
     includes: string[];
-    includesEn: string[];
+    includesEn?: string[]; // ✅ Cambiado: ahora es opcional con ?
   }>;
   inclusions?: string[];
   inclusionsEn?: string[];
@@ -36,6 +36,7 @@ export type Testimonial = {
   textEn: string;
   image: string;
 };
+
 export interface ContactForm {
   name: string;
   email: string;

@@ -3160,8 +3160,304 @@ export const tours: Tour[] = [
     }
   ]
 },
-
-// COMBO: CITY TOUR + SACRED VALLEY + RAINBOW MOUNTAIN
+{
+  id: 'paucartambo-tres-cruces',
+  title: 'Paucartambo Tres Cruces - Amanecer de Oro',
+  titleEn: 'Paucartambo Tres Cruces - Golden Sunrise',
+  image: '/tres-cruces.jpg',
+  duration: 1,
+  difficulty: 'easy',
+  price: 130,
+  description: 'Vive una experiencia única presenciando el "Amanecer de Oro" en el mirador de Tres Cruces.',
+  descriptionEn: 'Experience the unique "Golden Sunrise" at Tres Cruces viewpoint.',
+  highlights: [
+    'Amanecer de Oro en Tres Cruces',
+    'Mirador con vista al mar de nubes',
+    'Pueblo colonial de Paucartambo',
+    'Chullpas de Ninamarca',
+    'Noche estrellada en los Andes'
+  ],
+  highlightsEn: [
+    'Golden Sunrise at Tres Cruces',
+    'Viewpoint over sea of clouds',
+    'Colonial town of Paucartambo',
+    'Ninamarca Chullpas',
+    'Starry night in the Andes'
+  ],
+  hotelCategory: 'Sin alojamiento',
+  passengerType: 'Classic',
+  inclusions: [
+    'Transporte turístico ida y retorno',
+    'Guía profesional',
+    'Bebidas calientes',
+    'Box lunch',
+    'Asesoría permanente'
+  ],
+  inclusionsEn: [
+    'Roundtrip tourist transportation',
+    'Professional guide',
+    'Hot drinks',
+    'Box lunch',
+    'Permanent assistance'
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: 'Cusco - Tres Cruces',
+      titleEn: 'Cusco - Tres Cruces',
+      description: '22:00 PM: Salida desde Plaza Regocijo. Parada en Paucartambo. 05:00 AM: Amanecer de Oro. 10:00 AM: Retorno con parada en Chullpas de Ninamarca.',
+      descriptionEn: '22:00 PM: Departure from Plaza Regocijo. Stop in Paucartambo. 05:00 AM: Golden Sunrise. 10:00 AM: Return via Ninamarca Chullpas.',
+      schedule: '22:00 - 10:00',
+      includes: ['Transporte', 'Guía', 'Box lunch'],
+      includesEn: ['Transportation', 'Guide', 'Box lunch']
+    }
+  ]
+},
+{
+  id: 'bosque-nublado-kosnipata',
+  title: 'Bosque Nublado Kosñipata 3D/2N',
+  titleEn: 'Kosñipata Cloud Forest 3D/2N',
+  image: '/bosken.png',
+  duration: 3,
+  difficulty: 'moderate',
+  price: 499,
+  description: 'Sumérgete en el mágico Bosque Nublado de Kosñipata, uno de los ecosistemas con mayor biodiversidad del mundo. Observación de aves, orquídeas, monos y caminatas entre neblina y exuberante vegetación.',
+  descriptionEn: 'Immerse yourself in the magical Kosñipata Cloud Forest, one of the most biodiverse ecosystems in the world. Birdwatching, orchids, monkeys and hikes through mist and lush vegetation.',
+  highlights: [
+    'Bosque Nublado de Kosñipata',
+    'Observación de aves (más de 300 especies)',
+    'Orquídeas y plantas endémicas',
+    'Caminatas en selva nublada',
+    'Safari nocturno',
+    'Comunidades locales'
+  ],
+  highlightsEn: [
+    'Kosñipata Cloud Forest',
+    'Birdwatching (over 300 species)',
+    'Orchids and endemic plants',
+    'Cloud forest hikes',
+    'Night safari',
+    'Local communities'
+  ],
+  hotelCategory: 'Lodge Selva',
+  passengerType: 'Naturaleza',
+  inclusions: [
+    'Transporte privado Cusco - Kosñipata - Cusco',
+    '2 noches en lodge ecológico',
+    'Todas las comidas',
+    'Guía bilingüe especializado',
+    'Caminatas y actividades diarias',
+    'Entradas a zonas protegidas'
+  ],
+  inclusionsEn: [
+    'Private transportation Cusco - Kosñipata - Cusco',
+    '2 nights in ecological lodge',
+    'All meals',
+    'Bilingual specialized guide',
+    'Daily hikes and activities',
+    'Protected area fees'
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: 'Cusco → Bosque Nublado Kosñipata',
+      titleEn: 'Cusco → Kosñipata Cloud Forest',
+      description: 'Salida temprano hacia Paucartambo y descenso al Bosque Nublado. Llegada al lodge, almuerzo y primera caminata.',
+      descriptionEn: 'Early departure to Paucartambo and descent to the Cloud Forest. Lodge arrival, lunch and first hike.',
+      schedule: '05:00 - 17:00',
+      includes: ['Transporte', 'Almuerzo', 'Cena', 'Caminata', 'Noche en lodge']
+    },
+    {
+      day: 2,
+      title: 'Exploración del Bosque Nublado',
+      titleEn: 'Cloud Forest Exploration',
+      description: 'Caminatas guiadas, observación de aves, orquídeas y vida silvestre. Safari nocturno.',
+      descriptionEn: 'Guided hikes, birdwatching, orchids and wildlife. Night safari.',
+      schedule: '06:00 - 20:00',
+      includes: ['Desayuno', 'Almuerzo', 'Cena', 'Actividades guiadas']
+    },
+    {
+      day: 3,
+      title: 'Kosñipata → Cusco',
+      titleEn: 'Kosñipata → Cusco',
+      description: 'Mañana libre para última observación y retorno a Cusco.',
+      descriptionEn: 'Free morning for final observation and return to Cusco.',
+      schedule: '07:00 - 16:00',
+      includes: ['Desayuno', 'Transporte retorno']
+    }
+  ]
+},
+{
+  id: 'parque-nacional-manu',
+  title: 'Parque Nacional del Manu Reserva 5D/4N',
+  titleEn: 'Manu National Park Reserve 5D/4N',
+  image: '/manu-national-park.jpg',
+  duration: 5,
+  difficulty: 'moderate',
+  price: 1299,
+  description: 'Aventura profunda en el Parque Nacional del Manu, una de las áreas con mayor biodiversidad del planeta. Selva baja, ríos, observación de fauna y cultura indígena.',
+  descriptionEn: 'Deep adventure in Manu National Park, one of the most biodiverse areas on the planet. Lowland jungle, rivers, wildlife observation and indigenous culture.',
+  highlights: [
+    'Parque Nacional del Manu (Reserva)',
+    'Observación de jaguares, monos y guacamayos',
+    'Safari en río Manu',
+    'Caminatas en selva primaria',
+    'Comunidades indígenas',
+    'Lagunas y plataformas de observación'
+  ],
+  highlightsEn: [
+    'Manu National Park (Reserve)',
+    'Jaguar, monkey and macaw observation',
+    'Manu River safari',
+    'Primary jungle hikes',
+    'Indigenous communities',
+    'Lagoons and observation platforms'
+  ],
+  hotelCategory: 'Lodge Selva + Camping',
+  passengerType: 'Aventura / Biodiversidad',
+  inclusions: [
+    'Transporte privado todo el recorrido',
+    '4 noches en lodges y campamentos',
+    'Todas las comidas',
+    'Guía naturalista bilingüe',
+    'Entradas al Parque Nacional',
+    'Safaris en bote y caminatas',
+    'Equipo básico de selva'
+  ],
+  inclusionsEn: [
+    'Private transportation full trip',
+    '4 nights in lodges and camps',
+    'All meals',
+    'Bilingual naturalist guide',
+    'National Park entrance fees',
+    'Boat safaris and hikes',
+    'Basic jungle equipment'
+  ],
+  itinerary: [
+    {
+      day: 1,
+      title: 'Cusco - Bosque Nublado - Manu',
+      titleEn: 'Cusco - Cloud Forest - Manu',
+      description: 'Descenso por la carretera Manu hasta el Bosque Nublado y entrada a la Reserva.',
+      descriptionEn: 'Descent along the Manu road to the Cloud Forest and entry to the Reserve.',
+      schedule: '05:00 - 18:00',
+      includes: [
+        'Transporte Cusco-Bosque Nublado',
+        'Guía naturalista',
+        'Almuerzo',
+        'Cena',
+        'Noche en lodge'
+      ],
+      includesEn: [
+        'Cusco-Cloud Forest transportation',
+        'Naturalist guide',
+        'Lunch',
+        'Dinner',
+        'Night in lodge'
+      ]
+    },
+    {
+      day: 2,
+      title: 'Exploración del Río Manu',
+      titleEn: 'Manu River Exploration',
+      description: 'Navegación por el río Manu. Observación de fauna y caminatas.',
+      descriptionEn: 'Navigation on the Manu River. Wildlife observation and hikes.',
+      schedule: '06:00 - 18:00',
+      includes: [
+        'Desayuno',
+        'Safari en bote por el río Manu',
+        'Observación de fauna',
+        'Caminata en selva',
+        'Almuerzo',
+        'Cena',
+        'Noche en lodge'
+      ],
+      includesEn: [
+        'Breakfast',
+        'Boat safari on Manu River',
+        'Wildlife observation',
+        'Jungle hike',
+        'Lunch',
+        'Dinner',
+        'Night in lodge'
+      ]
+    },
+    {
+      day: 3,
+      title: 'Selva Primaria y Plataformas',
+      titleEn: 'Primary Jungle and Platforms',
+      description: 'Caminatas profundas y observación desde plataformas.',
+      descriptionEn: 'Deep jungle hikes and platform observation.',
+      schedule: '05:30 - 18:00',
+      includes: [
+        'Desayuno',
+        'Caminata en selva primaria',
+        'Visita a plataformas de observación',
+        'Avistamiento de aves y monos',
+        'Almuerzo',
+        'Cena',
+        'Noche en campamento'
+      ],
+      includesEn: [
+        'Breakfast',
+        'Primary jungle hike',
+        'Visit to observation platforms',
+        'Bird and monkey watching',
+        'Lunch',
+        'Dinner',
+        'Night in camp'
+      ]
+    },
+    {
+      day: 4,
+      title: 'Lagunas y Vida Silvestre',
+      titleEn: 'Lagoons and Wildlife',
+      description: 'Safari al amanecer y exploración de lagunas oxbow.',
+      descriptionEn: 'Dawn safari and oxbow lagoon exploration.',
+      schedule: '04:30 - 18:00',
+      includes: [
+        'Desayuno',
+        'Safari al amanecer',
+        'Exploración de lagunas',
+        'Avistamiento de jaguares (oportunidad)',
+        'Almuerzo',
+        'Cena',
+        'Noche en lodge'
+      ],
+      includesEn: [
+        'Breakfast',
+        'Dawn safari',
+        'Lagoon exploration',
+        'Jaguar sighting (opportunity)',
+        'Lunch',
+        'Dinner',
+        'Night in lodge'
+      ]
+    },
+    {
+      day: 5,
+      title: 'Retorno a Cusco',
+      titleEn: 'Return to Cusco',
+      description: 'Última observación y viaje de regreso.',
+      descriptionEn: 'Final observation and return journey.',
+      schedule: '06:00 - 18:00',
+      includes: [
+        'Desayuno',
+        'Última caminata de observación',
+        'Transporte de retorno a Cusco',
+        'Almuerzo en ruta',
+        'Fin de servicios'
+      ],
+      includesEn: [
+        'Breakfast',
+        'Final observation hike',
+        'Return transportation to Cusco',
+        'Lunch en route',
+        'End of services'
+      ]
+    }
+  ]
+},
 {
   id: 'cusco-classic-combo-3d',
   title: 'Cusco Classic Combo 3D',
@@ -3648,44 +3944,4 @@ export const tours: Tour[] = [
   ]
 }
 
-];
-
-export const testimonials: Testimonial[] = [
-  {
-    id: '1',
-    name: 'Sarah Johnson',
-    country: 'USA',
-    rating: 5,
-    text: 'Una experiencia increíble. Nuestro guía fue muy profesional y conocedor. Machu Picchu fue aún más impresionante de lo que imaginaba.',
-    textEn: 'An incredible experience. Our guide was very professional and knowledgeable. Machu Picchu was even more impressive than I imagined.',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200'
-  },
-  {
-    id: '2',
-    name: 'Marco Rossi',
-    country: 'Italy',
-    rating: 5,
-    text: 'La Montaña de 7 Colores fue desafiante pero totalmente valió la pena. El paisaje es de otro mundo. Altamente recomendado.',
-    textEn: 'Rainbow Mountain was challenging but totally worth it. The landscape is out of this world. Highly recommended.',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200'
-  },
-  {
-    id: '3',
-    name: 'Emma Schmidt',
-    country: 'Germany',
-    rating: 5,
-    text: 'Servicio excelente desde la reserva hasta el final del tour. Todo estaba perfectamente organizado. Volveremos pronto.',
-    textEn: 'Excellent service from booking to the end of the tour. Everything was perfectly organized. We will be back soon.',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200'
-  },
-  {
-    id: '4',
-    name: 'Carlos Mendoza',
-    country: 'Mexico',
-    rating: 5,
-    text: 'La mejor agencia de tours en Cusco. Precios justos, guías expertos y experiencias auténticas. 100% recomendado.',
-    textEn: 'The best tour agency in Cusco. Fair prices, expert guides and authentic experiences. 100% recommended.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200'
-  }
-  
 ];
